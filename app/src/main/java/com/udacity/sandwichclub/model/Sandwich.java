@@ -1,8 +1,6 @@
 package com.udacity.sandwichclub.model;
 
 import java.util.List;
-
-
 public class Sandwich {
 
     private String mainName;
@@ -11,6 +9,7 @@ public class Sandwich {
     private String description;
     private String image;
     private List<String> ingredients = null;
+
 
     /**
      * No args constructor for use in serialization

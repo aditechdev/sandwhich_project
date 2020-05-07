@@ -7,78 +7,94 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/padding_left_detail"
+        android:paddingRight="@dimen/padding_left_detail"
+        android:paddingBottom="@dimen/padding_bottom_layout">
+
+        <!--image view of food-->
+
         <ImageView
             android:id="@+id/image_iv"
             android:layout_width="match_parent"
             android:layout_height="200dp"
             android:adjustViewBounds="true"
             android:contentDescription="@string/sandwich_picture_content_description"
-            android:scaleType="centerCrop" />
+            android:scaleType="centerCrop"/>
 
-
+        <!--TextView of Detail description Label -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="20sp"
-            android:layout_marginTop="10dp"
+            android:textSize="@dimen/description_text_size"
+            android:layout_marginTop="@dimen/discription_text_top_margin"
             android:textColor="@color/colorPrimaryDark"
             android:text="@string/detail_description_label" />
 
+        <!--TextView of description explanation-->
+
         <TextView
             android:id="@+id/description_tv"
-            android:textSize="18sp"
-            android:textColor="@android:color/black"
-            android:textAllCaps="false"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/content_text_size"
+            android:textColor="@android:color/darker_gray"/>
+
+        <!--TextView of Origin Label Label -->
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="20sp"
-            android:layout_marginTop="10dp"
             android:text="@string/detail_place_of_origin_label"
+            android:textSize="@dimen/description_text_size"
+            android:layout_marginTop="@dimen/discription_text_top_margin"
             android:textColor="@color/colorPrimaryDark"/>
+
+        <!--TextView of Origin Label Explanation -->
 
         <TextView
             android:id="@+id/origin_tv"
             android:layout_width="wrap_content"
-            android:textSize="18sp"
-            android:textColor="@android:color/black"
-            android:textAllCaps="false"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/content_text_size"
+            android:textColor="@android:color/darker_gray" />
+
+        <!--Text View of Detail Label-->
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="20sp"
-            android:layout_marginTop="10dp"
             android:text="@string/detail_also_known_as_label"
+            android:textSize="@dimen/description_text_size"
+            android:layout_marginTop="@dimen/discription_text_top_margin"
             android:textColor="@color/colorPrimaryDark" />
+
+        <!--Text View of Detail Label Explanation-->
 
         <TextView
             android:id="@+id/also_known_tv"
-            android:textColor="@android:color/black"
-            android:textAllCaps="false"
-            android:textSize="18sp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-
-        <TextView
-            android:textSize="20sp"
-            android:textColor="@color/colorPrimaryDark"
-            android:layout_marginTop="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/detail_ingredients_label" />
+            android:textSize="@dimen/content_text_size"
+            android:textColor="@android:color/darker_gray"/>
+
+        <!--Text View of Detail Ingredients Label-->
 
         <TextView
-            android:id="@+id/ingredients_tv"
-            android:textSize="18sp"
-            android:textColor="@android:color/black"
-            android:textAllCaps="false"
+
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:text="@string/detail_ingredients_label"
+            android:textSize="@dimen/description_text_size"
+            android:layout_marginTop="@dimen/discription_text_top_margin"
+            android:textColor="@color/colorPrimaryDark"/>
+        <!--Text View of Detail Ingredients Label Explanation-->
+        <TextView
+            android:id="@+id/ingredients_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/content_text_size"
+            android:textColor="@android:color/darker_gray"/>
+
     </LinearLayout>
 </ScrollView>
